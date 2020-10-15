@@ -11,11 +11,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const serviceAccount = require("./volunteer-network-4c27e-firebase-adminsdk-th2fw-07f8597b6b.json");
+const serviceAccount = require("./config/volunteer-network00-firebase-adminsdk-pe49g-f0f997f65e.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://volunteer-network-4c27e.firebaseio.com"
+  databaseURL: "https://volunteer-network00.firebaseio.com"
 });
 
 
