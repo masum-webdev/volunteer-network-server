@@ -8,7 +8,7 @@ require('dotenv').config();
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.e8ljm.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
 const app = express();
-app.use(cors())
+app.use(cors());
 app.use(bodyParser.json());
 
 const serviceAccount = require("./volunteer-network-4c27e-firebase-adminsdk-th2fw-07f8597b6b.json");
